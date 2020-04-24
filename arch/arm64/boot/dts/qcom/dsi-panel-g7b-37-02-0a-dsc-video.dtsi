@@ -57,17 +57,17 @@
 		qcom,mdss-dsi-panel-max-luminance = <0x0F 0x20>;
 		qcom,mdss-dsi-panel-max-luminance-valid = <0x01 0x01>;
 		qcom,esd-err-irq-gpio = <&tlmm 32 0x2002>; /* trig-flags: falling-0x0002 rasing-0x0001*/
-		qcom,mdss-dsi-qsync-min-refresh-rate = <60>;
+		qcom,mdss-dsi-qsync-min-refresh-rate = <90>;
 #if 1
 		qcom,mdss-dsi-pan-enable-dynamic-fps;
 		qcom,mdss-dsi-pan-fps-update =
 			"dfps_immediate_porch_mode_vfp";
-		qcom,dsi-supported-dfps-list = <120 90 60 50 30>;
+		qcom,dsi-supported-dfps-list = <90 60 50 30>;
 #endif
 		qcom,is-tddi-flag;
 		qcom,mdss-dsi-display-timings {
 			timing@0{
-				qcom,mdss-dsi-panel-framerate = <120>;
+				qcom,mdss-dsi-panel-framerate = <90>;
 				qcom,mdss-dsi-panel-width = <1080>;
 				qcom,mdss-dsi-panel-height = <2400>;
 				qcom,mdss-dsi-h-pulse-width = <12>;

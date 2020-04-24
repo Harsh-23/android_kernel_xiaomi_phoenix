@@ -1649,13 +1649,12 @@ static int dsi_panel_parse_dfps_caps(struct dsi_panel *panel)
 	}
 
 	/* HACK: hardcode supported refresh rates */
-	dfps_caps->dfps_list_len = 2;
+	dfps_caps->dfps_list_len = 1;
 
 	dfps_caps->dfps_list = kcalloc(dfps_caps->dfps_list_len, sizeof(u32),
 			GFP_KERNEL);
 
-	dfps_caps->dfps_list[0] = 60;
-	dfps_caps->dfps_list[1] = 120;
+	dfps_caps->dfps_list[0] = 90;
 	dfps_caps->dfps_support = true;
 
 	/* calculate max and min fps */
